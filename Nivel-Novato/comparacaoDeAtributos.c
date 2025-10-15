@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Nível Mestre - Cálculo do Super Poder e Comparação de Cartas
+// Desafio Lógica Super Trunfo - Países
 
 int main()
 {
@@ -29,7 +28,7 @@ int main()
     float pibPerCapita2; 
     float superPoder2; 
 
-    printf("###### Bem-vindo(a) ao Super Trunfo - Países (Nível Mestre) ######\n");
+    printf("###### Bem-vindo(a) ao Super Trunfo - Países ######\n");
     printf("Cadastre suas cartas a seguir:\n");
 
     // Bloco de código para entrada de dados da carta 1.
