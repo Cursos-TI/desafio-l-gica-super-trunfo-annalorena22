@@ -231,105 +231,107 @@ int main()
       printf("Atributo inválido! Por favor, escolha um número entre 1 e 7.\n");
       break;
     }
-  }
 
-  switch (atributoEscolhido2) { // Segundo switch para comparar o segundo atributo escolhido pelo usuário no menu interativo.
-  case 1: // População
-  if (populacaoCarta1 > 0 && populacaoCarta2 > 0) {
-    printf("Atributo 2 escolhido: 1 - População\n");
-    printf("=================================================\n");
-    resultado2 = populacaoCarta1 > populacaoCarta2 ? 1 : 0;
-    valorAtributo2Carta1 = populacaoCarta1;
-    valorAtributo2Carta2 = populacaoCarta2;
+    switch (atributoEscolhido2) { // Segundo switch para comparar o segundo atributo escolhido pelo usuário no menu interativo.
+    case 1: // População
+    if (populacaoCarta1 > 0 && populacaoCarta2 > 0) {
+      printf("Atributo 2 escolhido: 1 - População\n");
+      printf("=================================================\n");
+      resultado2 = populacaoCarta1 > populacaoCarta2 ? 1 : 0;
+      valorAtributo2Carta1 = populacaoCarta1;
+      valorAtributo2Carta2 = populacaoCarta2;
 
-  } else {
-    printf("Atributo População não cadastrado em ambas as cartas.\n");
-    return 0;
-    }
-  break;
-  case 2: // Área
-  if (areaCarta1 > 0 && areaCarta2 > 0) {
-    printf("Atributo 2 escolhido: 2 - Área\n");
-    printf("=================================================\n");
-    resultado2 = areaCarta1 > areaCarta2 ? 1 : 0;
-    valorAtributo2Carta1 = areaCarta1;
-    valorAtributo2Carta2 = areaCarta2;
-
-  } else {
-    printf("Atributo Área não cadastrado em ambas as cartas.\n");
-    return 0;
-    }
-  break;
-  case 3: // PIB  
-  if (pibCarta1 > 0 && pibCarta2 > 0) {
-    printf("Atributo 2 escolhido: 3 - PIB\n");
-    printf("=================================================\n");
-    resultado2 = pibCarta1 > pibCarta2 ? 1 : 0;
-    valorAtributo2Carta1 = pibCarta1;
-    valorAtributo2Carta2 = pibCarta2;
-
-  } else {
-      printf("Atributo PIB não cadastrado em ambas as cartas.\n");
+    } else {
+      printf("Atributo População não cadastrado em ambas as cartas.\n");
       return 0;
-    }
-  break;
-  case 4: // Pontos Turísticos
-  if (pontosTurCarta1 > 0 && pontosTurCarta2 > 0){
-    printf("Atributo 2 escolhido: 4 - Pontos Turísticos\n");
-    printf("=================================================\n");
-    resultado2 = pontosTurCarta1 > pontosTurCarta2 ? 1 : 0;
-    valorAtributo2Carta1 = pontosTurCarta1;
-    valorAtributo2Carta2 = pontosTurCarta2;
-
-  } else {
-      printf("Atributo Pontos Turísticos não cadastrado em ambas as cartas.\n");
-      return 0;
-    }
-  break;
-  case 5: // PIB per Capita
-  if (pibPerCapita1 > 0 && pibPerCapita2 > 0) {
-    printf("Atributo 2 escolhido: 5 - PIB per Capita\n");
-    printf("=================================================\n");
-    resultado2 = pibPerCapita1 > pibPerCapita2 ? 1 : 0;
-    valorAtributo2Carta1 = pibPerCapita1;
-    valorAtributo2Carta2 = pibPerCapita2;
-
-  } else {
-      printf("Atributo PIB per Capita não cadastrado em ambas as cartas.\n");
-      return 0;
-    }
-  break;
-  case 6: // Densidade Populacional - regra reversa
-  if (densidade1 > 0 && densidade2 > 0) {
-    printf("Atributo 2 escolhido: 6 - Densidade Populacional\n");
-    printf("=================================================\n");
-    resultado2 = densidade1 < densidade2 ? 1 : 0; // Regra reversa: menor densidade vence
-    valorAtributo2Carta1 = densidade1;
-    valorAtributo2Carta2 = densidade2;
-
-  } else {
-      printf("Atributo Densidade Populacional não cadastrado em ambas as cartas.\n");
-      return 0;
-    }
-  break;
-  case 7: // Super Poder
-  if (superPoder1 > 0 && superPoder2 > 0) {
-    printf("Atributo 2 escolhido: 7 - Super Poder\n");
-    printf("=================================================\n");
-    resultado2 = superPoder1 > superPoder2 ? 1 : 0;
-    valorAtributo2Carta1 = superPoder1;
-    valorAtributo2Carta2 = superPoder2;
-
-  } else {
-      printf("Atributo Super Poder não cadastrado em ambas as cartas.\n");
-      return 0;
-    }
-  break;
-  default:
-    printf("Atributo inválido! Por favor, escolha um número entre 1 e 7.\n");
+      }
     break;
-    
+    case 2: // Área
+    if (areaCarta1 > 0 && areaCarta2 > 0) {
+      printf("Atributo 2 escolhido: 2 - Área\n");
+      printf("=================================================\n");
+      resultado2 = areaCarta1 > areaCarta2 ? 1 : 0;
+      valorAtributo2Carta1 = areaCarta1;
+      valorAtributo2Carta2 = areaCarta2;
+
+    } else {
+      printf("Atributo Área não cadastrado em ambas as cartas.\n");
+      return 0;
+      }
+    break;
+    case 3: // PIB  
+    if (pibCarta1 > 0 && pibCarta2 > 0) {
+      printf("Atributo 2 escolhido: 3 - PIB\n");
+      printf("=================================================\n");
+      resultado2 = pibCarta1 > pibCarta2 ? 1 : 0;
+      valorAtributo2Carta1 = pibCarta1;
+      valorAtributo2Carta2 = pibCarta2;
+
+    } else {
+        printf("Atributo PIB não cadastrado em ambas as cartas.\n");
+        return 0;
+      }
+    break;
+    case 4: // Pontos Turísticos
+    if (pontosTurCarta1 > 0 && pontosTurCarta2 > 0){
+      printf("Atributo 2 escolhido: 4 - Pontos Turísticos\n");
+      printf("=================================================\n");
+      resultado2 = pontosTurCarta1 > pontosTurCarta2 ? 1 : 0;
+      valorAtributo2Carta1 = pontosTurCarta1;
+      valorAtributo2Carta2 = pontosTurCarta2;
+
+    } else {
+        printf("Atributo Pontos Turísticos não cadastrado em ambas as cartas.\n");
+        return 0;
+      }
+    break;
+    case 5: // PIB per Capita
+    if (pibPerCapita1 > 0 && pibPerCapita2 > 0) {
+      printf("Atributo 2 escolhido: 5 - PIB per Capita\n");
+      printf("=================================================\n");
+      resultado2 = pibPerCapita1 > pibPerCapita2 ? 1 : 0;
+      valorAtributo2Carta1 = pibPerCapita1;
+      valorAtributo2Carta2 = pibPerCapita2;
+
+    } else {
+        printf("Atributo PIB per Capita não cadastrado em ambas as cartas.\n");
+        return 0;
+      }
+    break;
+    case 6: // Densidade Populacional - regra reversa
+    if (densidade1 > 0 && densidade2 > 0) {
+      printf("Atributo 2 escolhido: 6 - Densidade Populacional\n");
+      printf("=================================================\n");
+      resultado2 = densidade1 < densidade2 ? 1 : 0; // Regra reversa: menor densidade vence
+      valorAtributo2Carta1 = densidade1;
+      valorAtributo2Carta2 = densidade2;
+
+    } else {
+        printf("Atributo Densidade Populacional não cadastrado em ambas as cartas.\n");
+        return 0;
+      }
+    break;
+    case 7: // Super Poder
+    if (superPoder1 > 0 && superPoder2 > 0) {
+      printf("Atributo 2 escolhido: 7 - Super Poder\n");
+      printf("=================================================\n");
+      resultado2 = superPoder1 > superPoder2 ? 1 : 0;
+      valorAtributo2Carta1 = superPoder1;
+      valorAtributo2Carta2 = superPoder2;
+
+    } else {
+        printf("Atributo Super Poder não cadastrado em ambas as cartas.\n");
+        return 0;
+      }
+    break;
+    default:
+      printf("Atributo inválido! Por favor, escolha um número entre 1 e 7.\n");
+      break;
+      
+    }
   }
+
+  
 
   // Soma dos atributos escolhidos
   somaCarta1 = valorAtributo1Carta1 + valorAtributo2Carta1;
