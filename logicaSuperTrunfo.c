@@ -331,13 +331,10 @@ int main()
     }
   }
 
-  
-
   // Soma dos atributos escolhidos
   somaCarta1 = valorAtributo1Carta1 + valorAtributo2Carta1;
   somaCarta2 = valorAtributo1Carta2 + valorAtributo2Carta2;
   
-
   // Exibição dos resultados detalhados
   printf("Pontuação Atributo 1:- Carta 1: %.2f\n", valorAtributo1Carta1);
   printf("Pontuação Atributo 1:- Carta 2: %.2f\n", valorAtributo1Carta2);
